@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "duskwalker",
+  "version": "${version}",
+  "name": "Duskwalker Horror",
+  "description": "Duskwalker Horror v14.1 (Java port of the Bedrock add-on): a slow, psychological horror stalker with sanity, journals, structures and 50+ scare systems.",
+  "authors": [
+    "Duskwalker"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/duskwalker/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.duskwalker.fabric.DuskwalkerMod"
+    ],
+    "client": [
+      "com.duskwalker.fabric.client.DuskwalkerClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "duskwalker.client.mixins.json",
+      "environment": "client"
+    },
+    "duskwalker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "heartbeat": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:heartbeat",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "breath": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:breath",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "creak": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:creak",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "drone": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:drone",
+        "attenuation_distance": 64
+      }
+    ]
+  },
+  "tick": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:tick",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "whisper": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:whisper",
+        "attenuation_distance": 48
+      }
+    ]
+  },
+  "ring": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "duskwalker:ring",
+        "attenuation_distance": 32
+      }
+    ]
+  }
+}

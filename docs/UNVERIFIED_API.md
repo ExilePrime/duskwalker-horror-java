@@ -1,0 +1,31 @@
+- DwEntity: Entity.getPistonPushReaction/PushReaction.IGNORE (parca adlari 1.21.1 Mojang adi, yerel referansta yok)
+- DwEntity: GroundPathNavigation.setCanOpenDoors(boolean) (referansta yok; Villager'dan bilinen ad)
+- DwEntity: Mob.setPathfindingMalus(PathType, float), PathType.WATER/WATER_BORDER (1.20.5+ adi, referansta yok)
+- DwEntity: NearestAttackableTargetGoal(Mob, Class, boolean mustSee) kurucusu; OpenDoorGoal(Mob, boolean) (referansta yok)
+- DwEntity: DamageSource.isCreativePlayer(), DamageTypeTags.BYPASSES_INVULNERABILITY, DamageTypes.LAVA (referansta yok)
+- DwEntity: LivingEntity.getHurtSound(DamageSource)/getDeathSound(), Entity.playStepSound(BlockPos,BlockState), causeFallDamage(float,float,DamageSource) imzalari
+- DwEntity: Attributes.SCALE / ATTACK_KNOCKBACK / FOLLOW_RANGE, Mob.createMobAttributes() (referansta yok); scale ile hitbox'in LivingEntity.getDimensions'ta olceklendigi varsayimi (refreshDimensions() ctor'da cagriliyor)
+- DwEntity: Level.broadcastEntityEvent(Entity, byte), Entity.handleEntityEvent(byte); olay kimligi 99 vanilla ile cakismiyor varsayimi
+- DwEntities: EntityType.Builder.build(String) (1.21.1'de String anahtar), SpawnEggItem(EntityType,int,int,Item.Properties) kurucusu
+- DwEntities: FabricItemGroup.builder().title/icon/displayItems (referansta .icon/.title var; displayItems 1.21.1 CreativeModeTab.Builder'dan)
+- DwNetwork: ByteBufCodecs.STRING_UTF8/DOUBLE/BOOL, StreamCodec.composite 6 parametre; ServerPlayer.hasDisconnected(); ServerPlayNetworking.canSend(player, Type)
+- DwModel: EntityModel(Function<ResourceLocation,RenderType>) kurucusu, ModelPart.visible/xRot alanlari, Model.renderToBuffer(PoseStack,VertexConsumer,int,int,int) (yarn Model.render ile dogrulandi, Mojang adi bellekten)
+- DwRenderer: MobRenderer(Context, M, float), LivingEntityRenderer.getRenderType(T,boolean,boolean,boolean), RenderType.entityTranslucent(ResourceLocation)
+- DwGeometry: PartPose.ZERO, CubeDeformation(float), CubeListBuilder.texOffs/addBox(…, CubeDeformation)
+- DuskwalkerClient: DeltaTracker.getGameTimeDeltaPartialTick(boolean) (docs ornegiyle dogrulandi), Minecraft.isPaused(), Window.getGuiScaledWidth/Height, GuiGraphics.fill(x1,y1,x2,y2,z,color) (docs ornegiyle dogrulandi)
+- FogRendererMixin: FogRenderer.setupColor(Camera,float,ClientLevel,int,float) ve setupFog(Camera,FogMode,float,boolean,float) adlari/imzalari (yarn BackgroundRenderer.render/applyFog ile imza dogrulandi, Mojang adi bellekten); FogRenderer.fogRed/fogGreen/fogBlue ozel statik alanlari; Camera.getFluidInCamera(); RenderSystem.getShaderFogStart/End, clearColor
+- CameraMixin: Camera.setup(BlockGetter,Entity,boolean,boolean,float), setRotation(float,float), setPosition(double,double,double), getXRot/getYRot/getPosition (yarn ile imza dogrulandi, Mojang adi bellekten)
+- IdMap: DamageSources.playerAttack/mobAttack/thrown/explosion/thorns/lightningBolt/freeze/genericKill/fellOutOfWorld/cactus/inWall/inFire/onFire/drown/starve/wither (1.21.1 Mojang adlari bellekten)
+- IdMap: DamageSource.typeHolder().unwrapKey(), BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation), SoundEvent.createVariableRangeEvent, DustParticleOptions.REDSTONE, BuiltInRegistries.SOUND_EVENT.wrapAsHolder
+- DynData: SavedData.Factory(Supplier, BiFunction<CompoundTag,HolderLookup.Provider,T>, DataFixTypes) kurucusu, SavedData.save(CompoundTag, HolderLookup.Provider), DimensionDataStorage.computeIfAbsent(Factory,String), CompoundTag.getAllKeys
+- McPerm: Property.getName(value)/getValue(String), DoubleBlockHalf/Half/DoorBlock/FenceGateBlock paketleri, BlockState.getProperties
+- McEntity: Entity.teleportTo(ServerLevel,double,double,double,Set<RelativeMovement>,float,float), RelativeMovement sinifi (1.21.1 adi), Entity.hurtMarked, LivingEntity.addEffect(MobEffectInstance), AbstractHorse.isTamed
+- McPlayer: ClientboundSoundPacket(Holder,SoundSource,x,y,z,vol,pitch,seed) kurucusu, ClientboundSetCarriedItemPacket, Player.pick(double,float,boolean), ServerPlayer.getRespawnPosition, gameMode.getGameModeForPlayer, sendSystemMessage
+- McBlock: SignBlockEntity.getFrontText/setText(SignText,boolean), SignText.setMessage/getMessages(boolean)
+- McDimension: ServerLevel.getAllEntities, getEntities(Entity,AABB,Predicate), getHeight(Heightmap.Types,x,z), isInWorldBounds, MobSpawnType.COMMAND, ItemEntity.setDefaultPickUpDelay, sendParticles 9 arg
+- CommandTranslator: CommandSourceStack.withLevel/withPosition/withPermission/withSuppressedOutput, MinecraftServer.createCommandSourceStack
+- FormGui: ChestMenu(MenuType,int,Inventory,Container,int) kurucusu, ChestMenu.getContainer, ServerPlayer.openMenu(MenuProvider) OptionalInt, SimpleMenuProvider, AbstractContainerMenu.clicked/removed/sendAllDataToRemote
+- EventHooks: ServerMessageEvents.ALLOW_CHAT_MESSAGE (PlayerChatMessage.signedContent()), ServerLivingEntityEvents.AFTER_DAMAGE 5 parametre, ServerPlayerEvents.AFTER_RESPAWN, ServerPlayConnectionEvents.DISCONNECT/JOIN (referanslar yarn adli)
+- FabricPlatform: GameRules.RULE_DAYLIGHT/RULE_WEATHER_CYCLE/RULE_DOMOBSPAWNING/RULE_MOBGRIEFING/RULE_KEEPINVENTORY/RULE_DOFIRETICK, GameRules.Value.set(boolean,MinecraftServer), ServerLevel.getMoonPhase, PlayerList.broadcastSystemMessage
+- BlockItemMixin: BlockItem.place(BlockPlaceContext) imzasi; ExplosionMixin: Explosion.finalizeExplosion(boolean), alan "level", getDirectSourceEntity (1.21.1'de Explosion alan adlari dogrulanmali)
+- DuskwalkerMod: Mod.done alanina yansima ile erisim (Mod degistirilemez)

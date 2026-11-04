@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.duskwalker.fabric.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CameraMixin",
+    "FogRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

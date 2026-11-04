@@ -1,0 +1,14 @@
+{
+  "entity.duskwalker.duskwalker": "Alacakaranlık Yürüyen",
+  "item.duskwalker.duskwalker_spawn_egg": "Duskwalker Doğurma Yumurtası",
+  "entity.duskwalker.aylin": "Aylin",
+  "entity.duskwalker.seep": "Sızıntı",
+  "entity.duskwalker.watcher": "Pencere Ruhu",
+  "entity.duskwalker.echo": "Ölüm Yankısı",
+  "entity.duskwalker.effigy": "Suret",
+  "item.duskwalker.echo_spawn_egg": "Ölüm Yankısı Doğurma Yumurtası",
+  "item.duskwalker.seep_spawn_egg": "Sızıntı Doğurma Yumurtası",
+  "item.duskwalker.watcher_spawn_egg": "Pencere Ruhu Doğurma Yumurtası",
+  "item.duskwalker.effigy_spawn_egg": "Suret Doğurma Yumurtası",
+  "itemGroup.duskwalker": "Duskwalker Horror"
+}

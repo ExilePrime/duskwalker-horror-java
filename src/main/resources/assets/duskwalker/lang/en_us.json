@@ -1,0 +1,14 @@
+{
+  "entity.duskwalker.duskwalker": "The Duskwalker",
+  "item.duskwalker.duskwalker_spawn_egg": "Duskwalker Spawn Egg",
+  "entity.duskwalker.aylin": "Aylin",
+  "entity.duskwalker.seep": "The Seep",
+  "entity.duskwalker.watcher": "Window Watcher",
+  "entity.duskwalker.echo": "Death Echo",
+  "entity.duskwalker.effigy": "Effigy",
+  "item.duskwalker.echo_spawn_egg": "Death Echo Spawn Egg",
+  "item.duskwalker.seep_spawn_egg": "The Seep Spawn Egg",
+  "item.duskwalker.watcher_spawn_egg": "Window Watcher Spawn Egg",
+  "item.duskwalker.effigy_spawn_egg": "Effigy Spawn Egg",
+  "itemGroup.duskwalker": "Duskwalker Horror"
+}

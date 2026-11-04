@@ -1,0 +1,2 @@
+- Player.isFlying: oyuncu ucuyor mu (abilities.flying); varsayilan false eklendi, binding override etmeli (EventsWorld)
+- Player.setSelectedSlotIndex(int): hotbar slotunu degistirir; bos varsayilan eklendi, binding override etmeli (Mind.slot_drift)
